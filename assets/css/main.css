@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .button {
+    max-width: 90px;
+    @apply flex justify-center w-full px-1 py-2 font-semibold text-white transition-all rounded-lg shadow-md disabled:bg-gray-500 disabled:shadow-none disabled:cursor-not-allowed bg-primaryBlue hover:bg-primaryBlueHover;
+  }
+  .button-modal {
+    max-width: 100%;
+  }
+
+  .mr-14px {
+    margin-right: 14px;
+  }
+}
+.container__inner {
+  width: 100%;
+  max-width: 745px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
